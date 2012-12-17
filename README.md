@@ -4,17 +4,49 @@
 
 ## Installation
 
-### Node.js
-
-`cell-ev` is available on [npm](http://npmjs.org).
-
-    $ npm install cell-ev
-
 ### Component
 
 `cell-ev` is available as a [component](https://github.com/component/component).
 
     $ component install qualiancy/cell-ev
+
+## Usage
+
+### .bind (element, event, handle)
+
+* **@param** _{Node}_ DOM element
+* **@param** _{String}_ event 
+* **@param** _{Function}_ handler 
+
+Add a handler as listener for event on
+element. If planning to `.unbind()`, the
+handler should not be defined inline.
+
+```js
+var ev = require('cell-ev');
+
+function domReady (e) {
+  // boot application, etc
+}
+
+ev.bind(window, 'ready', domReady);
+```
+
+
+### .unbind (element, event, handle)
+
+* **@param** _{Node}_ DOM element
+* **@param** _{String}_ event 
+* **@param** _{Function}_ handler 
+
+Remove a handler for event that was previously
+bound to an element. Arguments must be passed
+the same as when `.bind()`.
+
+```js
+ev.unbind(window, 'ready', domReady);
+```
+
 
 ## License
 
