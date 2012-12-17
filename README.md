@@ -25,11 +25,11 @@ handler should not be defined inline.
 ```js
 var ev = require('cell-ev');
 
-function domReady (e) {
-  // boot application, etc
+function domScroll (e) {
+  // detect location, etc
 }
 
-ev.bind(window, 'ready', domReady);
+ev.bind(window, 'scroll', domScroll);
 ```
 
 
@@ -44,7 +44,7 @@ bound to an element. Arguments must be passed
 the same as when `.bind()`.
 
 ```js
-ev.unbind(window, 'ready', domReady);
+ev.unbind(window, 'scroll', domScroll);
 ```
 
 
