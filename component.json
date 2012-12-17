@@ -5,10 +5,12 @@
   , "description": "Cross-browser event-binding for the DOM."
   , "license": "MIT"
   , "keywords": [
+        "dom"
+      , "events"
     ]
-  , "main": "lib/ev.js"
+  , "main": "index.js"
   , "scripts": [
-        "lib/ev.js"
+        "index.js"
     ]
   , "dependencies": {}
   , "development": {}
