@@ -1,0 +1,28 @@
+{
+    "name": "cell-ev"
+  , "version": "0.0.0"
+  , "description": "Cross-browser event-binding for the DOM."
+  , "author": "Jake Luer <jake@qualiancy.com>"
+  , "license": "MIT"
+  , "keywords": [
+    ]
+  , "repository": {
+        "type": "git"
+      , "url": "git@github.com:qualiancy/cell-ev.git"
+    }
+  , "engines": {
+      "node": "*"
+    }
+  , "main": "./index"
+  , "scripts": {
+      "test": "make test"
+    }
+  , "dependencies": {
+    }
+  , "devDependencies": {
+        "chai": "*"
+      , "component": "*"
+      , "mocha": "*"
+      , "mocha-phantomjs": "*"
+    }
+}
