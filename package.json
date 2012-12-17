@@ -1,6 +1,6 @@
 {
     "name": "cell-ev"
-  , "version": "0.0.0"
+  , "version": "0.1.0"
   , "description": "Cross-browser event-binding for the DOM."
   , "author": "Jake Luer <jake@qualiancy.com>"
   , "license": "MIT"
